@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		08EC4A70A0177642C56BAE70 /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD380D2AB4BFF7DC9FDA844 /* Pods_Todoey.framework */; };
-		57142C2022C6BCAB00D59B53 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57142C1E22C6BCAB00D59B53 /* DataModel.xcdatamodeld */; };
+		5711639C22CE89080078920A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711639B22CE89080078920A /* Item.swift */; };
+		5711639E22CE89120078920A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711639D22CE89120078920A /* Category.swift */; };
 		57142C4322C6E14A00D59B53 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57142C4222C6E14A00D59B53 /* CategoryTableViewController.swift */; };
 		5746E5EB22BDAEE20018D7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746E5EA22BDAEE20018D7CC /* AppDelegate.swift */; };
 		5746E5ED22BDAEE20018D7CC /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746E5EC22BDAEE20018D7CC /* TodoListViewController.swift */; };
@@ -18,7 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		57142C1F22C6BCAB00D59B53 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		5711639B22CE89080078920A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5711639D22CE89120078920A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		57142C4222C6E14A00D59B53 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		5746E5E722BDAEE20018D7CC /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5746E5EA22BDAEE20018D7CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +49,8 @@
 		57170B1E22C594A80044595B /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				57142C1E22C6BCAB00D59B53 /* DataModel.xcdatamodeld */,
+				5711639D22CE89120078920A /* Category.swift */,
+				5711639B22CE89080078920A /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -115,7 +118,6 @@
 				5E5F4F09CF7698FE0A37297C /* Pods-Todoey.debug.xcconfig */,
 				E40001346BD1579D7C409965 /* Pods-Todoey.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -242,10 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5711639C22CE89080078920A /* Item.swift in Sources */,
 				5746E5ED22BDAEE20018D7CC /* TodoListViewController.swift in Sources */,
-				57142C2022C6BCAB00D59B53 /* DataModel.xcdatamodeld in Sources */,
 				5746E5EB22BDAEE20018D7CC /* AppDelegate.swift in Sources */,
 				57142C4322C6E14A00D59B53 /* CategoryTableViewController.swift in Sources */,
+				5711639E22CE89120078920A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,19 +450,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		57142C1E22C6BCAB00D59B53 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				57142C1F22C6BCAB00D59B53 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 57142C1F22C6BCAB00D59B53 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5746E5DF22BDAEE20018D7CC /* Project object */;
 }
